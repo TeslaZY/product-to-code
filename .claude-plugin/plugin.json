@@ -1,0 +1,13 @@
+{
+  "name": "product-manager-agent",
+  "description": "Full-stack development agent plugin with product manager, UI design, and development skills",
+  "version": "1.0.0",
+  "author": {
+    "name": "Product Manager Agent",
+    "email": "TeslaZY@outlook.com"
+  },
+  "homepage": "https://github.com/yourusername/product-manager-agent",
+  "repository": "https://github.com/yourusername/product-manager-agent",
+  "license": "MIT",
+  "keywords": ["product-manager", "fullstack", "ui-design", "tdd", "spec-driven", "workflow"]
+}

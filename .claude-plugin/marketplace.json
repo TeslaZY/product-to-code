@@ -1,0 +1,20 @@
+{
+  "name": "product-manager-agent-marketplace",
+  "description": "Product Fullstack Agent plugin for Claude Code - from product idea to deployment with AI",
+  "owner": {
+    "name": "Product Manager Agent",
+    "email": "TeslaZY@outlook.com"
+  },
+  "plugins": [
+    {
+      "name": "product-manager-agent",
+      "description": "Full-stack development agent plugin with product manager, UI design, and development skills",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "Product Manager Agent",
+        "email": "TeslaZY@outlook.com"
+      }
+    }
+  ]
+}
