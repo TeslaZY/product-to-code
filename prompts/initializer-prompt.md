@@ -12,22 +12,44 @@ This plugin implements a complete software development lifecycle as a long-runni
 - Testing and verification
 - Code review and deployment
 
-### FIRST: Check Dependencies
+### FIRST: Check & Install Dependencies
 
-Before starting, verify the required tools are installed:
+Before starting, check and guide dependency installation:
 
+**1. Check Required (Git):**
 ```bash
-# Required
 git --version
+```
+- If missing: Guide user to install from https://git-scm.com/downloads
+- Wait for user confirmation before proceeding
 
-# Optional (Python projects)
-uv --version 2>/dev/null || echo "uv not installed"
+**2. Ask Project Type:**
+Ask user: "What type of project are you building?"
+- Python backend → Check `uv --version`
+- Node.js frontend → Check `node --version`
+- Other → Skip optional deps
 
-# Optional (spec-driven development)
-specify --version 2>/dev/null || echo "specify-cli not installed"
+**3. Optional Dependencies:**
+
+| Dependency | Check | Install Command |
+|------------|-------|-----------------|
+| uv | `uv --version` | `curl -LsSf https://astral.sh/uv/install.sh \| sh` |
+| specify-cli | `specify --version` | `uv tool install specify-cli --from git+https://github.com/github/spec-kit.git` |
+
+**4. Optional Plugins (ask if user wants):**
+```
+# Superpowers - Development workflow
+/plugin marketplace add obra/superpowers-marketplace
+/plugin install superpowers@superpowers-marketplace
+
+# UI/UX Pro - UI design
+/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill
+/plugin install ui-ux-pro-max@ui-ux-pro-max-skill
 ```
 
-If critical dependencies are missing, inform the user and point to `DEPENDENCIES.md` for installation instructions.
+**5. Proceed when:**
+- Git is installed (required)
+- Optional deps are either installed or user confirmed to skip
 
 ### SECOND: Understand the Project Context
 

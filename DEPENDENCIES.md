@@ -2,19 +2,11 @@
 
 本文档列出 Long-Running Product Agent 的所有外部依赖。
 
-## 快速安装
+## 安装方式
 
-运行自动化安装脚本（推荐）：
+**推荐方式：** 运行 `/init` 时会自动检测依赖并引导安装。
 
-```bash
-# 进入插件目录
-cd /path/to/Long-running_Product_Agent
-
-# 运行安装脚本
-./scripts/install-deps.sh
-```
-
-脚本会交互式地询问并安装所需依赖。
+**手动安装：** 参考下方各依赖的安装命令。
 
 ## 必需依赖
 
@@ -67,7 +59,7 @@ uv --version
 specify --version
 ```
 
-## 快速安装脚本
+## 手动安装命令
 
 ### macOS/Linux
 
