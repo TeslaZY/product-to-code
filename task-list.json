@@ -1,0 +1,196 @@
+{
+  "project_info": {
+    "name": "PM Agent",
+    "description": "重构为专注产品经理工作流的插件 - 从想法到产品规格",
+    "type": "product-design",
+    "created_at": "2026-02-14T00:00:00Z",
+    "last_updated": "2026-02-14T19:30:00Z",
+    "naming": {
+      "plugin_name": "pm-agent",
+      "marketplace_name": "pm-agent",
+      "full_name": "PM Agent (Product Manager Agent)",
+      "repository": "TeslaZY/pm-agent",
+      "commands": {
+        "prefix": "pm",
+        "list": ["/pm:init", "/pm:discover", "/pm:analyze", "/pm:design", "/pm:status"]
+      }
+    }
+  },
+  "statistics": {
+    "total_tasks": 18,
+    "completed_tasks": 18,
+    "in_progress_tasks": 0,
+    "pending_tasks": 0,
+    "blocked_tasks": 0
+  },
+  "phases": [
+    {
+      "id": "phase-1",
+      "name": "清理旧文件",
+      "description": "删除不再需要的旧命令和技能文件",
+      "status": "completed",
+      "tasks": [
+        {
+          "id": "clean-001",
+          "category": "cleanup",
+          "description": "删除旧的 commands 目录文件",
+          "passes": true
+        },
+        {
+          "id": "clean-002",
+          "category": "cleanup",
+          "description": "删除旧的 skills 目录文件",
+          "passes": true
+        },
+        {
+          "id": "clean-003",
+          "category": "cleanup",
+          "description": "删除旧的 prompts 和 docs 文件",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "name": "更新命名和配置",
+      "description": "更新插件名称和配置文件",
+      "status": "completed",
+      "tasks": [
+        {
+          "id": "naming-001",
+          "category": "config",
+          "description": "更新 plugin.json 配置",
+          "passes": true
+        },
+        {
+          "id": "naming-002",
+          "category": "config",
+          "description": "更新 marketplace.json 配置",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "name": "创建新命令",
+      "description": "创建 5 个新的产品经理命令",
+      "status": "completed",
+      "tasks": [
+        {
+          "id": "cmd-001",
+          "category": "command",
+          "description": "创建 /pm:init 命令",
+          "passes": true
+        },
+        {
+          "id": "cmd-002",
+          "category": "command",
+          "description": "创建 /pm:discover 命令",
+          "passes": true
+        },
+        {
+          "id": "cmd-003",
+          "category": "command",
+          "description": "创建 /pm:analyze 命令",
+          "passes": true
+        },
+        {
+          "id": "cmd-004",
+          "category": "command",
+          "description": "创建 /pm:design 命令",
+          "passes": true
+        },
+        {
+          "id": "cmd-005",
+          "category": "command",
+          "description": "创建 /pm:status 命令",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "id": "phase-4",
+      "name": "创建新技能",
+      "description": "创建 4 个新的产品经理技能",
+      "status": "completed",
+      "tasks": [
+        {
+          "id": "skill-001",
+          "category": "skill",
+          "description": "创建 requirement-discovery 技能",
+          "passes": true
+        },
+        {
+          "id": "skill-002",
+          "category": "skill",
+          "description": "创建 tough-questioning 技能",
+          "passes": true
+        },
+        {
+          "id": "skill-003",
+          "category": "skill",
+          "description": "创建 prd-writer 技能",
+          "passes": true
+        },
+        {
+          "id": "skill-004",
+          "category": "skill",
+          "description": "创建 prototype-designer 技能",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "id": "phase-5",
+      "name": "创建 Prompts 和模板",
+      "description": "创建新的提示词和文档模板",
+      "status": "completed",
+      "tasks": [
+        {
+          "id": "prompt-001",
+          "category": "prompt",
+          "description": "创建 init-prompt.md",
+          "passes": true
+        },
+        {
+          "id": "prompt-002",
+          "category": "prompt",
+          "description": "创建 discover-prompt.md",
+          "passes": true
+        },
+        {
+          "id": "template-001",
+          "category": "template",
+          "description": "更新 task-list-template.json",
+          "passes": true
+        }
+      ]
+    },
+    {
+      "id": "phase-6",
+      "name": "更新核心文档",
+      "description": "更新 CLAUDE.md、README.md 和 agent",
+      "status": "completed",
+      "tasks": [
+        {
+          "id": "doc-001",
+          "category": "documentation",
+          "description": "更新 CLAUDE.md",
+          "passes": true
+        },
+        {
+          "id": "doc-002",
+          "category": "documentation",
+          "description": "更新 README.md",
+          "passes": true
+        },
+        {
+          "id": "doc-003",
+          "category": "documentation",
+          "description": "重构 agents/product-manager.md",
+          "passes": true
+        }
+      ]
+    }
+  ]
+}
